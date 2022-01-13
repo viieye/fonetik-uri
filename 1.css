@@ -1,0 +1,69 @@
+.table {
+    background-color: #888;
+    border: 1px solid #0f8;
+    user-select: none;
+}
+
+.toplables, .row {
+    background-color: #408;
+    /* border-bottom: 1px solid #0f8; */
+    height: 40px;
+    font-size: 25px;
+    display: flex;
+    color: #88f;
+}
+
+body {
+    background-color: #222;
+}
+
+.toplables .label {
+    max-width: 800px;
+    width: 400px;
+    border: 1px solid #0f8;
+    text-align: center;
+    padding: 5px;
+}
+
+.toplables .label:nth-child(odd) {
+    border-left: 1px solid #0f80;
+    max-width: 0px;
+}
+
+.toplables .label:nth-child(even) {
+    border-right: 1px solid #0f80;
+}
+
+.toplables .label:nth-child(1) {
+    border-right: 1px solid #0f8;
+    max-width: 800px;
+}
+
+.row .label {
+    max-width: 800px;
+    width: 400px;
+    border: 1px solid #0f8;
+    text-align: center;
+    padding: 5px;
+    font-size: 16px;
+}
+
+.row .char {
+    max-width: 400px;
+    width: 200px;
+    border: 1px solid #0f8;
+    text-align: center;
+    padding: 5px;
+    font-size: 25px;
+    user-select: none;
+}
+
+.row .empty {
+    border: 1px solid #0f80;
+    background-color: #648;
+}
+
+.char:not(.empty):hover {
+    background-color: #848;
+    border: 1px solid #0f8;
+}
